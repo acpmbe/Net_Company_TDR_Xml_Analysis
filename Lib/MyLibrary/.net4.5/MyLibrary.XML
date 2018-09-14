@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:MyLibrary.ConverUtil">
+            <summary>
+            转换类。
+            </summary>
+        </member>
+        <member name="M:MyLibrary.ConverUtil.StrToBytes(System.String)">
+            <summary>
+            字符串转Byte数组。
+            </summary>
+            <param name="str">要转换的字符串。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.ConverUtil.ByteToHStr(System.Byte[])">
+            <summary>
+            Byte数组转16进制字符串。
+            </summary>
+            <param name="bytes">要转换的Byte数组。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.ConverUtil.Byte2_ToDStr(System.Byte[],System.Int32)">
+            <summary>
+            二字节转十进制字符串。
+            </summary>
+            <param name="_content">内容。</param>
+            <param name="Start">开始字节。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.ConverUtil.Byte4_ToDStr(System.Byte[],System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_content"></param>
+            <param name="Start"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.ConverUtil.ByteToStr(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Byte数组转字符串。
+            </summary>
+            <param name="_content">内容。</param>
+            <param name="Start">开始字节。</param>
+            <param name="Length">长度。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.ConverUtil.DtoHStr(System.UInt16,System.String)">
+            <summary>
+            十进制转16进制字符串。
+            </summary>
+            <param name="byteNum">转换后的长度。</param>
+            <param name="content">内容。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.ConverUtil.Time(System.Byte[])">
+            <summary>
+            Byte数组转时间。
+            </summary>
+            <param name="timeByte">Byte数组。</param>
+            <returns></returns>
+        </member>
+        <member name="T:MyLibrary.MyJson">
+            <summary>
+            Json类。
+            </summary>
+        </member>
+        <member name="M:MyLibrary.MyJson.Serialize``1(``0)">
+            <summary>
+            序列化。
+            </summary>
+            <typeparam name="T">对象。</typeparam>
+            <param name="value">值。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.MyJson.Deserialize``1(System.String)">
+            <summary>
+            反序列化。
+            </summary>
+            <typeparam name="T">对象。</typeparam>
+            <param name="value">值。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.MyJson.DeserializeObject(System.String,System.Type)">
+            <summary>
+            反序列化成对象。
+            </summary>
+            <param name="value">值。</param>
+            <param name="type">类型。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.MyJson.DeserializeObject(System.String)">
+            <summary>
+            反序列化成对象。
+            </summary>
+            <param name="value">值。</param>
+            <returns></returns>
+        </member>
+        <member name="T:MyLibrary.MyLog">
+            <summary>
+            日志类。
+            </summary>
+        </member>
+        <member name="M:MyLibrary.MyLog.Info(System.String)">
+            <summary>
+            日志Info方法。
+            </summary>
+            <param name="msg">内容。</param>
+        </member>
+        <member name="M:MyLibrary.MyLog.Debug(System.String)">
+            <summary>
+             日志Debug方法。
+            </summary>
+            <param name="msg">内容。</param>
+        </member>
+        <member name="M:MyLibrary.MyLog.Warn(System.String)">
+            <summary>
+            日志Warn方法。
+            </summary>
+            <param name="msg">内容。</param>
+        </member>
+        <member name="M:MyLibrary.MyLog.Error(System.String)">
+            <summary>
+            日志Error方法。
+            </summary>
+            <param name="msg">内容。</param>
+        </member>
+        <member name="M:MyLibrary.MyLog.Fatal(System.String)">
+            <summary>
+            日志Fatal方法。
+            </summary>
+            <param name="msg">内容。</param>
+        </member>
+        <member name="M:MyLibrary.MyLog.RepeatDataInfo(System.String)">
+            <summary>
+            重复数据日志记录。
+            </summary>
+            <param name="msg">内容。</param>
+        </member>
+        <member name="M:MyLibrary.MyLog.MonitorRunInfo(System.String)">
+            <summary>
+            监视程序运行日志记录。
+            </summary>
+            <param name="msg">内容。</param>
+        </member>
+        <member name="T:MyLibrary.MySection">
+            <summary>
+            区间类。
+            </summary>
+        </member>
+        <member name="M:MyLibrary.MySection.Array(System.UInt32,System.UInt32)">
+            <summary>
+            返回数组。
+            </summary>
+            <param name="Start">开始。</param>
+            <param name="End">结束。</param>
+            <returns></returns>
+        </member>
+        <member name="T:MyLibrary.MyXml">
+            <summary>
+            Xml类。
+            </summary>
+        </member>
+        <member name="M:MyLibrary.MyXml.Serialize``1(``0)">
+            <summary>
+            序列化。
+            </summary>
+            <typeparam name="T">对象。</typeparam>
+            <param name="t">对象实例化。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.MyXml.Deserialize``1(System.String)">
+            <summary>
+            反序列化。
+            </summary>
+            <typeparam name="T">对象。</typeparam>
+            <param name="xmlString">字符串。</param>
+            <returns></returns>
+        </member>
+        <member name="T:MyLibrary.SFZUtil">
+            <summary>
+            身份证类。
+            </summary>
+        </member>
+        <member name="M:MyLibrary.SFZUtil.Validate(System.String)">
+            <summary>
+            验证（返回0正确，否则出错信息）。
+            </summary>
+            <param name="sfz">身份证号。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.SFZUtil.Sex(System.String)">
+            <summary>
+            通过身份证得到性别。
+            </summary>
+            <param name="sfz">身份证号。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.SFZUtil.Date(System.String)">
+            <summary>
+            通过身份证得到出生日期。
+            </summary>
+            <param name="sfz">身份证号。</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLibrary.SFZUtil.ByteToStr(System.Byte[],System.Int32)">
+            <summary>
+            Byte数组转身份证号。
+            </summary>
+            <param name="value">值。</param>
+            <param name="start">开始索引。</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

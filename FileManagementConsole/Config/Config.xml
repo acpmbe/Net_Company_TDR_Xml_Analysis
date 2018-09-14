@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<configuration>
+
+
+  <Config Name="极光推送" IsOpen="true" >
+    <Tokens>
+      <Token>
+        <Type>1001</Type>
+        <Name>我的住房</Name>
+        <Token>BE571BDB-5796-44D3-8E74-E07AD79A8BC7</Token>
+      </Token>
+      <Token>
+        <Type>1002</Type>
+        <Name>我家出租房</Name>
+        <Token>7CEEC0C0-E854-45D3-8EF4-C9AE991127BF</Token>
+      </Token>
+      <Token>
+        <Type>1003</Type>
+        <Name>我的车</Name>
+        <Token>0D89A4C2-93BD-4A09-BBC9-CCC7DF8CD802</Token>
+      </Token>
+      <Token>
+        <Type>1004</Type>
+        <Name>我的店</Name>
+        <Token>460928E0-483C-4322-9243-91F081E1C1A4</Token>
+      </Token>
+      <Token>
+        <Type>1005</Type>
+        <Name>亲情关爱</Name>
+        <Token>D5CC7424-2193-4880-B60D-215A60D4343A</Token>
+      </Token>
+      <Token>
+        <Type>1007</Type>
+        <Name>出租房代管</Name>
+        <Token>86BF3BB9-8C4D-4054-8A52-B85688FB42B0</Token>
+      </Token>   
+    </Tokens>
+    <AppKeys>
+      <AppKey>
+        <AppKey>24ffdda01813c5207f7c654e</AppKey>
+        <MasterSecret>f28e6f089b1b5e32fae42b23</MasterSecret>
+      </AppKey>
+    </AppKeys>
+
+  </Config>
+
+
+  <Config Name="短信" IsOpen="true" >
+    <ServerUrl>http://messager.tdr-cn.com/SendMessage.ashx</ServerUrl>
+    <AppId>8</AppId>
+    <AppKey>ba032a0e32e3423bb55bc17bc3490223</AppKey>
+  </Config>
+
+  <Config Name="百度云推送" IsOpen="true" >
+
+    <WebSite>http://tpush.iotone.cn/api/push/SingleDevice</WebSite>
+    <UserName>test</UserName>
+    <PassWord>test</PassWord>
+    <Android>
+      <ApiKey>67Fkd3ISk5IVje38rH2OdB7W</ApiKey>
+      <SecretKey>tAKKGDcXGdjRzBQXUaMSIffip1dmvyPI</SecretKey>
+    </Android>
+    <Ios>
+      <ApiKey>AEK2QT62DIMtC5CsZFjhGby6</ApiKey>
+      <SecretKey>uZNrgLU9ErguaGC5GPwdxVsGr1DRvI8z</SecretKey>
+    </Ios>
+
+
+
+  </Config>
+
+  <Config Name="过滤重复数据" IsOpen="true" >
+    <DataMark Name="数据标识">0101</DataMark>
+    <BufferTime Name="缓存时间">15</BufferTime>
+  </Config>
+
+
+  <Config Name="微信" Remark="1：正式平台 2：亲情宝 3：老平台" IsOpen="true" >
+    <ChuZuWu_F002 >3</ChuZuWu_F002>
+    <ChuZuWu_F004 >4</ChuZuWu_F004>
+  </Config>
+
+
+
+
+
+
+</configuration>
+
+

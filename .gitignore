@@ -1,0 +1,13 @@
+.vs/
+bin/
+obj/
+FileManagement/bin/
+FileManagement/obj/
+FileManagementConsole/bin/
+FileManagementConsole/obj/
+FileManagementDal/bin/
+FileManagementDal/obj/
+FileManagementModel/bin/
+FileManagementModel/obj/
+FileManagementUtil/bin/
+FileManagementUtil/obj/

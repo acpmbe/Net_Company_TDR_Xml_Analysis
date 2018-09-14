@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TDR</name>
+    </assembly>
+    <members>
+        <member name="T:TDR.DReceiveStandardData">
+            <summary>
+            接受设备标准数据委托。
+            </summary>
+            <param name="DeviceNum">设备编号。</param>
+            <param name="Content">内容。</param>
+        </member>
+        <member name="T:TDR.ConnState">
+            <summary>
+            连接状态（PlatformUtil类）。
+            </summary>
+        </member>
+        <member name="F:TDR.ConnState.Disconnect">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="F:TDR.ConnState.ConnectingToAllotter">
+            <summary>
+            正在连接调度
+            </summary>
+        </member>
+        <member name="F:TDR.ConnState.ConnectingToAPI">
+            <summary>
+            正在连接API
+            </summary>
+        </member>
+        <member name="F:TDR.ConnState.Connected">
+            <summary>
+            连接成功
+            </summary>
+        </member>
+        <member name="T:TDR.PlatformUtil">
+            <summary>
+            平台类。
+            </summary>
+        </member>
+        <member name="E:TDR.PlatformUtil.EReceiveStandardData">
+            <summary>
+            接受设备标准数据事件。
+            </summary>
+        </member>
+        <member name="M:TDR.PlatformUtil.State">
+            <summary>
+            平台连接状态。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TDR.PlatformUtil.IsConnect">
+            <summary>
+            平台是否连接成功。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TDR.PlatformUtil.Open(TDR.PlatformUtil.PTParametMod)">
+            <summary>
+            打开平台连接。
+            </summary>
+            <param name="_pTParamet">平台参数。</param>
+        </member>
+        <member name="M:TDR.PlatformUtil.CancelDevice(System.UInt32)">
+            <summary>
+            注销设备。
+            </summary>
+            <param name="devId">设备编号。</param>
+        </member>
+        <member name="M:TDR.PlatformUtil.CancelDevice(System.UInt32[])">
+            <summary>
+            注销设备。
+            </summary>
+            <param name="devId">设备编号。</param>
+        </member>
+        <member name="M:TDR.PlatformUtil.RegisterDevice(System.UInt32[])">
+            <summary>
+            注册设备。
+            </summary>
+            <param name="devId">设备编号。</param>
+        </member>
+        <member name="M:TDR.PlatformUtil.RegisterDevice(System.UInt32)">
+            <summary>
+            注册设备。
+            </summary>
+            <param name="devId">设备编号。</param>
+        </member>
+        <member name="M:TDR.PlatformUtil.Send(System.UInt32,System.UInt16,System.Byte[])">
+            <summary>
+            发送消息到设备。
+            </summary>
+            <param name="Device">设备编号。</param>
+            <param name="CommandWord">命令字。</param>
+            <param name="SendInfo">内容。</param>
+            <returns></returns>
+        </member>
+        <member name="T:TDR.PlatformUtil.PTParametMod">
+            <summary>
+            平台参数类。
+            </summary>
+        </member>
+        <member name="P:TDR.PlatformUtil.PTParametMod.AppId">
+            <summary>
+            连接平台AppId。
+            </summary>
+        </member>
+        <member name="P:TDR.PlatformUtil.PTParametMod.AppKey">
+            <summary>
+            连接平台AppKey。
+            </summary>
+        </member>
+        <member name="P:TDR.PlatformUtil.PTParametMod.Ip">
+            <summary>
+            连接Ip。
+            </summary>
+        </member>
+        <member name="P:TDR.PlatformUtil.PTParametMod.Port">
+            <summary>
+            端口。
+            </summary>
+        </member>
+    </members>
+</doc>

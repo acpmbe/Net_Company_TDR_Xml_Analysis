@@ -1,0 +1,7 @@
+使用说明 
+1、引用 NetTrans.dll(需要附带 Newtonsoft.Json.dll、Oracle.ManagedDataAccess.dll 两个文件)
+2、在配置文件中加入相关的配置，详见 web.config
+3、在WEB应用中加入Global.asax
+4、加入一个一般处理程序 GetResponse.ashx,只要继承 NetTrans.GetResponseAsync 就可以了
+
+web service 配置完成成

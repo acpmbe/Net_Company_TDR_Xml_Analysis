@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{657CF71B-11A9-454A-9E6D-94B87345D671}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileManagement</RootNamespace>
+    <AssemblyName>FileManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MyLibrary">
+      <HintPath>..\Lib\MyLibrary\.net4.0\MyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizeXmlFormat.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Commands\CeXie\CeXie_61443.cs" />
+    <Compile Include="Commands\CeXie\CeXie_61443_0444.cs" />
+    <Compile Include="Commands\CeXie\CeXie_66.cs" />
+    <Compile Include="Commands\CeXie\CeXie_66_0444.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\CZW_61444.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0406\CZW_61444_0406_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0406\CZW_61444_0406_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0406\CZW_61444_0406_04.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0406\CZW_61444_0406_10.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0407\CZW_61444_0407_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0407\CZW_61444_0407_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0408\CZW_61444_0408_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0408\CZW_61444_0408_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0409\CZW_61444_0409_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0409\CZW_61444_0409_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040A\CZW_61444_040A_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040A\CZW_61444_040A_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040B\CZW_61444_040B_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040B\CZW_61444_040B_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040C\CZW_61444_040C_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040C\CZW_61444_040C_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040C\CZW_61444_040C_04.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040D\CZW_61444_040D_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_040D\CZW_61444_040D_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0410\CZW_61444_0410.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0417\CZW_61444_0417_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0417\CZW_61444_0417_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0440\CZW_61444_0440_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0440\CZW_61444_0440_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0440\CZW_61444_0440_03.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0440\CZW_61444_0440_04.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0441\CZW_61444_0441_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0441\CZW_61444_0441_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0441\CZW_61444_0441_03.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0442\CZW_61444_0442_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0442\CZW_61444_0442_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0442\CZW_61444_0442_03.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0442\CZW_61444_0442_04.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0480\CZW_61444_0480_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61444\Dt_0480\CZW_61444_0480_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\CZW_61504.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_03.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_04.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_05.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_07.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_08.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_10.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_12.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_14.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_16.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61504\Dt_0430\CZW_61504_0430_48.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\CZW_61506.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_03.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_17.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_177.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_19.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_195.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_197.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_199.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_201.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_21.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_33.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_35.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_37.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_51.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_53.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_67.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0411\CZW_61506_0411_69.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0426\CZW_61506_0426_01.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0426\CZW_61506_0426_02.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0426\CZW_61506_0426_03.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0426\CZW_61506_0426_04.cs" />
+    <Compile Include="Commands\ChuZuWu\Cd_61506\Dt_0426\Filter_0426_Bll.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_23.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_2_Bll.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_33.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_518.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_519.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_521.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_522.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_524.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_526.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_529.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_531.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_532.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_538.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_539.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_540.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_541.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_542.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_543.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_544.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_545.cs" />
+    <Compile Include="Commands\ChuZuWu\CZW_548.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\DengJiJi\Cd_61443\DJJ_61443.cs" />
+    <Compile Include="Commands\DengJiJi\Cd_61443\Dt_8016\DJJ_61443_8016_01.cs" />
+    <Compile Include="Commands\DengJiJi\DJJ_2049.cs" />
+    <Compile Include="Commands\DengJiJi\DJJ_2050.cs" />
+    <Compile Include="Commands\DuanXinFaSongCommand\DuanXinFaSongCommand.cs" />
+    <Compile Include="Commands\HouseAndUserCard\HU_3.cs" />
+    <Compile Include="Commands\HouseAndUserCard\HU_3_1.cs" />
+    <Compile Include="Commands\JingXie\JX_61443.cs" />
+    <Compile Include="Commands\LvYe\Cd_61506\Dt_0419\LV_61506_0419_17.cs" />
+    <Compile Include="Commands\LvYe\Cd_61506\Dt_0419\LV_61506_0419_19.cs" />
+    <Compile Include="Commands\LvYe\Cd_61506\Dt_0419\LV_61506_0419_195.cs" />
+    <Compile Include="Commands\LvYe\Cd_61506\Dt_0419\LV_61506_0419_197.cs" />
+    <Compile Include="Commands\LvYe\Cd_61506\Dt_0419\LV_61506_0419_199.cs" />
+    <Compile Include="Commands\LvYe\Cd_61506\Dt_0419\LV_61506_0419_21.cs" />
+    <Compile Include="Commands\LvYe\Cd_61506\LY_61056.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_22.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_23.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_25.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_5.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_1.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_10.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_2.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_3.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_4.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_5.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_6.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_7.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_8.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61443_9.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61444.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61444_1.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61444_2.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61445.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61445_12.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_61446.cs" />
+    <Compile Include="Commands\MenJin2\MJ2_67.cs" />
+    <Compile Include="Commands\MenJinShouQuanCommand\MenJinKaShanChuCommand.cs" />
+    <Compile Include="Commands\MenJinShouQuanCommand\MenJinKaShouQuanCommand.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0001.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0002.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0003.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0012.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0046.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0291.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0292.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0293.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0294.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0295.cs" />
+    <Compile Include="Commands\MenJin\CD_33\MJ_33_0296.cs" />
+    <Compile Include="Commands\MenJin\Filter_Bll.cs" />
+    <Compile Include="Commands\MenJin\MJ_5.cs" />
+    <Compile Include="Commands\MenJin\MJ_67.cs" />
+    <Compile Include="Commands\QiangZhiGuanKong\QZGK_177.cs" />
+    <Compile Include="Commands\QiangZhiGuanKong\QZGK_178.cs" />
+    <Compile Include="Commands\QiangZhiGuanKong\QZGK_61443.cs" />
+    <Compile Include="Commands\QiangZhiGuanKong\QZGK_61443_8040_01.cs" />
+    <Compile Include="Commands\QiYeFangHu\QYFH_5.cs" />
+    <Compile Include="Commands\QiYeFangHu\QYFH_61443.cs" />
+    <Compile Include="Commands\QiYeFangHu\QYFH_61443_0406_1.cs" />
+    <Compile Include="Commands\QiYeFangHu\QYFH_61443_0600_1.cs" />
+    <Compile Include="Commands\QiYeFangHu\QYFH_61443_0601_1.cs" />
+    <Compile Include="Commands\QiYeFangHu\QYFH_61443_0602_1.cs" />
+    <Compile Include="Commands\QiYeKaoQing\QYKQ_01.cs" />
+    <Compile Include="Commands\QiYeKaoQing\QYKQ_02.cs" />
+    <Compile Include="Commands\QiYeKaoQing\QYKQ_03.cs" />
+    <Compile Include="Commands\QiYeKaoQing\QYKQ_04.cs" />
+    <Compile Include="Commands\SocialAppTerminal\SAT_5.cs" />
+    <Compile Include="Commands\SocialAppTerminal\SAT_61443.cs" />
+    <Compile Include="Commands\SocialAppTerminal\SAT_61505.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_01.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_02.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_02_01.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_121.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_129.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_61446.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_64.cs" />
+    <Compile Include="Commands\YiKaGuanChuan\YKGC_64_00.cs" />
+    <Compile Include="Commands\ZNQT\Alarm_Bll.cs" />
+    <Compile Include="Commands\ZNQT\ZNQT_61443.cs" />
+    <Compile Include="Commands\ZNQT\ZNQT_61443_8780_01.cs" />
+    <Compile Include="Commands\ZNQT\ZNQT_61443_8780_02.cs" />
+    <Compile Include="CommandXmlFormat.cs" />
+    <Compile Include="Factory\AgreementFormatFactory.cs" />
+    <Compile Include="Factory\ChuZuWuAnFangFactory.cs" />
+    <Compile Include="Factory\CommandFactory.cs" />
+    <Compile Include="Factory\DengJiJiFactory.cs" />
+    <Compile Include="Factory\DuanXinFaSongFactory.cs" />
+    <Compile Include="Factory\HouseAndUserCardFactory.cs" />
+    <Compile Include="Factory\JingXieFactory.cs" />
+    <Compile Include="Factory\LvYeFactory.cs" />
+    <Compile Include="Factory\MenJinErQiFactory.cs" />
+    <Compile Include="Factory\MenJinShouQuanFactory.cs" />
+    <Compile Include="Factory\QiangZhiGuanKongFactory.cs" />
+    <Compile Include="Factory\QiYeFangHuFactory.cs" />
+    <Compile Include="Factory\SocialAppTerminalFactory.cs" />
+    <Compile Include="Factory\WxmjCommandFactory.cs" />
+    <Compile Include="Commands\IgnoreCommand.cs" />
+    <Compile Include="Factory\FileFactory.cs" />
+    <Compile Include="Factory\YiKaGuanChuanFactory.cs" />
+    <Compile Include="Factory\ZNQTFactory.cs" />
+    <Compile Include="IXmlFormat.cs" />
+    <Compile Include="Model\SyncInfo.cs" />
+    <Compile Include="Factory\QykqCommandFactory.cs" />
+    <Compile Include="Factory\WxmjAuthorizeCommandFactory.cs" />
+    <Compile Include="Other\ChuZuWu\Alert_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Class1.cs" />
+    <Compile Include="Other\ChuZuWu\Pro_InDatabase_NFC_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Pro_IndataBase_ZNMP_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Pro_IndateBase_DZMP_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Pro_IndateBase_MJNew_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Pro_IndateBase_Sec_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Pro_IndateBase_ZHMJ_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Pro_UploadAlarm_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\SendSms_Bll.cs" />
+    <Compile Include="Other\ChuZuWu\Sms_Bll.cs" />
+    <Compile Include="Other\DengJiJi\Pro_InDatabase_LY_Bll.cs" />
+    <Compile Include="Other\LvYe\Pro_IndataBase_ZNMP_Bll.cs" />
+    <Compile Include="Other\LvYe\SendInfo_Bll.cs" />
+    <Compile Include="XmlFile_Bll.cs" />
+    <Compile Include="XmlFormatFactory.cs" />
+    <Compile Include="XmlFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileManagementDal\FileManagementDal.csproj">
+      <Project>{4b624451-a1d7-4950-b8fc-c4b647a9a58f}</Project>
+      <Name>FileManagementDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileManagementModel\FileManagementModel.csproj">
+      <Project>{a201b0b3-8237-4348-af90-f0524901e798}</Project>
+      <Name>FileManagementModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileManagementUtil\FileManagementUtil.csproj">
+      <Project>{28224033-de5f-46f6-9256-3083ef47351a}</Project>
+      <Name>FileManagementUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

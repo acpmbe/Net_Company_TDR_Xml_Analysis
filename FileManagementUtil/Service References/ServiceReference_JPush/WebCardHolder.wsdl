@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CardHolder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="taskId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="encryption" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataTypeCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CardHolderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CardHolderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CardHolderSoapIn">
+    <wsdl:part name="parameters" element="tns:CardHolder" />
+  </wsdl:message>
+  <wsdl:message name="CardHolderSoapOut">
+    <wsdl:part name="parameters" element="tns:CardHolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="CardHolderHttpGetIn">
+    <wsdl:part name="token" type="s:string" />
+    <wsdl:part name="cardType" type="s:string" />
+    <wsdl:part name="taskId" type="s:string" />
+    <wsdl:part name="encryption" type="s:string" />
+    <wsdl:part name="DataTypeCode" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CardHolderHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CardHolderHttpPostIn">
+    <wsdl:part name="token" type="s:string" />
+    <wsdl:part name="cardType" type="s:string" />
+    <wsdl:part name="taskId" type="s:string" />
+    <wsdl:part name="encryption" type="s:string" />
+    <wsdl:part name="DataTypeCode" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CardHolderHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebCardHolderSoap">
+    <wsdl:operation name="CardHolder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">卡包WebService服务</wsdl:documentation>
+      <wsdl:input message="tns:CardHolderSoapIn" />
+      <wsdl:output message="tns:CardHolderSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebCardHolderHttpGet">
+    <wsdl:operation name="CardHolder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">卡包WebService服务</wsdl:documentation>
+      <wsdl:input message="tns:CardHolderHttpGetIn" />
+      <wsdl:output message="tns:CardHolderHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebCardHolderHttpPost">
+    <wsdl:operation name="CardHolder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">卡包WebService服务</wsdl:documentation>
+      <wsdl:input message="tns:CardHolderHttpPostIn" />
+      <wsdl:output message="tns:CardHolderHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebCardHolderSoap" type="tns:WebCardHolderSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CardHolder">
+      <soap:operation soapAction="http://tempuri.org/CardHolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebCardHolderSoap12" type="tns:WebCardHolderSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CardHolder">
+      <soap12:operation soapAction="http://tempuri.org/CardHolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebCardHolderHttpGet" type="tns:WebCardHolderHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="CardHolder">
+      <http:operation location="/CardHolder" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebCardHolderHttpPost" type="tns:WebCardHolderHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="CardHolder">
+      <http:operation location="/CardHolder" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebCardHolder">
+    <wsdl:port name="WebCardHolderSoap" binding="tns:WebCardHolderSoap">
+      <soap:address location="http://122.228.188.210:20043/WebCardHolder.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebCardHolderSoap12" binding="tns:WebCardHolderSoap12">
+      <soap12:address location="http://122.228.188.210:20043/WebCardHolder.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebCardHolderHttpGet" binding="tns:WebCardHolderHttpGet">
+      <http:address location="http://122.228.188.210:20043/WebCardHolder.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebCardHolderHttpPost" binding="tns:WebCardHolderHttpPost">
+      <http:address location="http://122.228.188.210:20043/WebCardHolder.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
